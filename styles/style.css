@@ -1,0 +1,547 @@
+/*----- Global -----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;  
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    padding-bottom: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px; 
+}
+
+.p-break {
+    padding-top: 1rem;
+}
+
+a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.btn {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 1rem;
+    text-decoration: none;   
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.btn:hover {
+    background-color: #fab03174;
+    transition-duration: 500ms;
+}
+
+/*--x-- Global --x--*/
+
+/*----- Header -----*/
+
+.grid-container-header {
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:250px 250px;
+    grid-template-areas: 
+    "item1 item1 item1 item2 item2 item2"
+    "item1 item1 item1 item3 item3 item3";
+    justify-content: center;
+    position: relative;   
+}
+
+.grid1 {
+    background-color: #C7DDEA;
+    grid-area: item1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.grid2 {
+    background-color: #F17949;
+    grid-area: item2; 
+    display: grid;
+    align-items: center;
+    position:relative;
+}
+
+.grid3 {
+    background-color: #FAB131;
+    grid-area: item3;
+    display: grid;
+    align-items: center;
+    position:relative;
+}
+
+.flex1-title {
+    padding:2rem 6rem;
+    position: relative;
+}
+
+.flex2-p {
+    margin-left: 100px;
+    margin-right: 134px;
+    margin-bottom:0px;
+    margin-top: 0px;
+    position: relative; 
+}
+
+.flex3-button {
+    margin-left: 0rem;
+    margin-right: 12rem;
+    margin-top: 51px;
+    position: relative;
+}
+
+.flex4-picture {
+    position: absolute;;
+    align-self: flex-end;
+    bottom: -4px;
+    margin-right: 17px;
+}
+
+.perday-white-text {
+    color: white;
+}
+
+.grid-p {
+    font-size: 11px;
+    display: flex;
+    justify-self: center;
+    align-self: end;
+    margin:0 auto;
+}
+
+.grid-title {
+    display: flex;
+    justify-self: center;
+    align-self: start;
+    margin:0 auto;
+    color: #FFFFFF;
+}
+
+/*--x-- Header --x--*/
+
+/*----- Main nav-bar -----*/
+
+.main-nav{
+    background-color: #E5E5E5;  
+    min-height: 68px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.main-nav ul li {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    align-self: center;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.4;  
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    font-size: 12px;
+}
+
+.current {
+    color: black !important;
+    opacity: 1 !important;
+}
+
+/*--x-- Main nav-bar --x--*/
+
+/*----- Grey section -----*/
+
+.greyrek {
+    min-height: 612px;
+    background-color: #A9A19E;
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    justify-self: center;
+}
+
+.grey1 {
+    max-width: 314px;
+    max-height: 250px;
+    margin-left: 107px;
+    margin-right: 0px;
+    margin-top: 103px;
+}
+
+.grey1 h1 {
+    display:flex;
+    color: #FFFFFF;
+    position: relative;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+}
+
+.grey1 a {
+    margin-right: 150px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    align-self: end;
+    position: relative;
+}
+
+.grey2 {
+    margin-right: 129px;
+    margin-left: 172px;
+    margin-top: 103px;
+    max-width:280px;
+    max-height: 237px;
+}
+
+.grey2 p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+} 
+
+/*--x-- Grey section --x--*/
+
+/*----- Card section -----*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 65rem;
+    min-width: 1000px; 
+}
+
+.cards-boxes {
+    max-width: 256px;
+    min-height: 308px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.image-people {
+    min-width: 236px;
+    min-height: 150px;
+    border-radius: 4px;
+    align-self: center;
+    position: absolute;
+    top: -2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.ppl-1 {
+    background: #C7DDEA;
+    position: relative;
+}
+
+.ppl-2{
+    background: #FAB131;
+    position: relative;
+}
+
+.ppl-3 {
+    background: #F17949;
+    position: relative;
+}
+
+.img-boy {
+    position: absolute;
+    top:1rem;
+    max-width: 40%;
+}
+
+.img-adult {
+    position: absolute;
+    top:1rem;
+    max-width: 40%;
+}
+
+.img-old {
+    position: absolute;
+    top:1rem;
+    max-width: 60%;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+.cards-boxes p {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    padding-bottom: 1rem;
+}
+
+/*--x-- Card section --x--*/
+
+/*----- Yellow Article -----*/
+
+.yellow-article {
+    background-color: #FAB131;
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-article h1 {
+    color: white;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.yellow-article p {
+    text-align: center;
+    max-width: 442px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*--x-- Yellow Article --x--*/
+
+/*----- Grid container -----*/
+
+ .grid-container-big {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container-big article {
+    min-height: 340px;
+    min-width: 334px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-container-big article p {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    max-width: 257px;
+    align-self: center;
+}
+
+.grid-container-big article h2 {
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    align-self: center;
+}
+
+.grid-container-big article h3 {
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.4);
+    align-self: flex-start;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    margin: 0;
+}
+
+.grid-container-big .box-1 {
+    background-color: #C7DDEA;
+}
+
+.grid-container-big .box-3 {
+    background-color: #EBEBEB; 
+}
+
+.grid-container-big .box-5 {
+    background: #F17949;
+} 
+
+/*--x-- Grid container --x--*/
+
+/*----- Take-me-up -----*/
+
+.take-me-up {
+    min-height: 68px;
+    background-color: #A9A19E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.take-me-up a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/*--x-- Take-me-up --x--*/
+
+/*----- Main footer -----*/
+
+.main-footer {
+    min-height: 340px;
+    background: #777574;
+}
+
+/*--x-- Main footer --x--*/
+
+/*----- Media query -----*/
+
+@media only screen and (max-width: 700px) {
+
+    .grid-container-header {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .grid1 {
+        min-height: 700px;
+    }
+
+    .grid2, .grid3 {
+        min-height: 315px;
+    }
+
+    .greyrek {
+        flex-direction: column;
+        min-height: 1580px;
+        justify-content: initial;  
+    }
+
+    .grey1 {
+        justify-content: flex-start;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .grey2 {
+        align-self: center;
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;    
+    }
+
+    .grey1 a {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        top: 112rem;
+        left: 7rem;
+        gap: 3rem;
+    }
+
+    .yellow-article {
+        min-height: 550px;
+    }
+    .grid-container-big {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-big article {
+        min-height: 170px;
+    }
+
+    .take-me-up {
+        display: none;
+    }
+}
+
+/*--x-- Media query --x--*/
+
+
+
+
+
